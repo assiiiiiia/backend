@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <h1>Add a Task</h1>
+    <form action="http://localhost:3000/tasks" method="POST">
+        <!-- Task Name -->
+        <label for="task_name">Task Name:</label>
+        <input type="text" id="task_name" name="task_name" required><br><br>
+
+        <!-- Category -->
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+            <option value="etude">Étude</option>
+            <option value="travail">Travail</option>
+            <option value="maison">Maison</option>
+            <option value="loisir">Loisir</option>
+            <option value="menage">Ménage</option>
+            <option value="autre">Autre</option>
+        </select><br><br>
+
+        <!-- Due Date -->
+        <label for="due_date">Due Date:</label>
+        <input type="date" id="due_date" name="due_date"><br><br>
+
+        <!-- Due Time -->
+        <label for="due_time">Due Time:</label>
+        <input type="time" id="due_time" name="due_time"><br><br>
+
+        <!-- Priority -->
+        <label for="priority">Priority:</label>
+        <select id="priority" name="priority" required>
+            <option value="moins important">Moins important</option>
+            <option value="important">Important</option>
+            <option value="urgent">Urgent</option>
+        </select><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Add Task</button>
+    </form>
+</body>
+
+</html>
